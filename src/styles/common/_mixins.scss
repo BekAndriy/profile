@@ -1,0 +1,21 @@
+@mixin transition() {
+  transition: all 0.3s;
+}
+
+@mixin responsive($max: "", $min: "") {
+  @if $max == "" and $min == "" {
+    @content;
+  } @else if $min != "" and $max != "" {
+    @media all and (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == "" {
+    @media all and (min-width: $min) {
+      @content;
+    }
+  } @else if $min == "" {
+    @media all and (max-width: $max) {
+      @content;
+    }
+  }
+}

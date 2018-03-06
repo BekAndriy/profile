@@ -1,0 +1,48 @@
+@media  only screen and (max-width: 767px) {
+  .technology-list {
+    .point-item {
+      padding: 0 26px 0 10px;
+      .icon-close {
+        background-color: #fa7571;
+        opacity: 1;
+        right: 4px;
+      }
+    }
+  }
+}
+.point-item {
+  border-radius: 2px;
+  color: #ffffff;
+  padding:  0 10px;
+  margin-right:  6px;
+  line-height: 1.5rem;
+  display: inline-block;
+  font-size: 0.9rem;
+  .icon-close {
+    background-color: #fa7571;
+    opacity: 0;
+    &:hover {
+      background-color: #bd6767;
+    }
+  }
+  &:hover {
+    .icon-close {
+      opacity: 1;
+    }
+  }
+}
+
+.point-item {
+  position:  relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+  &.average {
+    background-color: $grey-medium;
+  }
+  &.low {
+    background-color: $grey-low;
+  }
+  &.strong {
+    background-color: $black;
+  }
+}

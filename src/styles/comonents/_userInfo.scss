@@ -1,0 +1,99 @@
+@include responsive(480px, $mobile) {
+  .preview-image {
+    width: 100%;
+  }
+  .header .preview-info .btn-print-page {
+    top: 15px;
+  }
+};
+
+@include responsive($table, 767px) {
+  .preview-info {
+    width: calc(100% - 239px);
+  }
+};
+
+@include responsive("", $table) {
+  .preview-image {
+    img {
+      height: 238px;
+      width: auto;
+    }
+  }
+  .preview-info {
+    width: calc(100% - 239px);
+  }
+};
+
+.info-user-name {
+  input {
+    font-weight: 500;
+  }
+}
+
+@include responsive(767px) {
+  .header {
+    .editor-info-wrap {
+      margin-right: 0;
+      padding-top: 1.45rem;
+    }
+    .btn-print-page {
+      top: -135px;
+    }
+  }
+}
+
+@include responsive("", 768px) {
+  .editor-info-wrap {
+    width: calc(100% - 130px);
+    .text-field {
+      padding-left: 5px;
+    }
+  }
+}
+
+.header {
+  background-color: $grey;
+}
+
+.preview-info {
+  padding: 20px 30px 25px;
+  position: relative;
+}
+
+.add-skills-wrap {
+  button {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.btn-print-page {
+  color: #ffffff;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.technology-list {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.add-skills-field .focus.edit-field {
+  input {
+    border-color: #00ff00;
+    line-height: 1.4rem;
+  }
+  select {
+    border-radius: 7px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 11px;
+    margin-right: 6px;
+  }
+}

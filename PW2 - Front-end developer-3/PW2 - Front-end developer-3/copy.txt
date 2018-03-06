@@ -1,0 +1,45 @@
+John Smith 
+
+Portland, Oregon, USA
+
+English
+
+Print this page
+
+Portfolio PHP, Ruby, Javascript
+NavalPlan, PHP, Ruby
+MyTime, Javascript
+Formidable, PHP, Ruby
+MyTime, Javascript
+Monsoon, ActionScript
+
+
+
+Experience
+PHP, 6 years
+Ruby, 7 years
+Javascript, 4 years
+ActionScript, 3 years
+
+
+Sample code and algorithms
+
+Availability
+Full-time
+
+Preferred environment
+Git, GitHub, vim, emacs, Jenkins, Mac OSX
+
+
+The most amazing …
+
+… Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua et dol ut labore et dolore 
+
+
+In clients I look for …
+
+… Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua et dol ut labore et dolore 
+
+Note
+
+… Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua et dol ut labore et dolore 

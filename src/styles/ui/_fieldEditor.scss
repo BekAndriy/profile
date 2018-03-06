@@ -1,0 +1,125 @@
+$border-color: #bababa;
+
+.edit-field {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  .actions {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .text-field {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding-right: 60px;
+    cursor: pointer;
+    width: 100%;
+  }
+  &.focus {
+    .text-field {
+      background-color: white;
+      border: 1px solid $border-color;
+      cursor: text;
+    }
+    .actions {
+      display: flex;
+      opacity: 1;
+    }
+    &.has-select input {
+      padding-right: 120px;
+    }
+  }
+  .btn-field {
+    background-color: $grey;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 6px 0 0;
+    padding: 0;
+    height: 22px;
+    width: 22px;
+    &:hover {
+      background-color: $grey-medium;
+      @include transition();
+    }
+    &.btn-field-cancel {
+      right: 5px;
+    }
+    &.btn-field-success {
+      right: 35px;
+      &:after,
+      &:before {
+        right: 37px;
+      }
+      &:after {
+        right: 41px;
+      }
+      &.btn-small:after,
+      &.btn-small:before {
+        right: 29px;
+        width: 10px
+      }
+      &.btn-small:after {
+        right: 31px;
+        width: 5px
+      }
+    }
+  }
+  &.large {
+    input {
+      font-size: 2rem;
+      line-height: 1.2em;
+    }
+  }
+  .btn-small {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.btn-field:after,
+.btn-field:before {
+  background-color: #ffffff;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  height: 2px;
+  width: 12px;
+}
+
+.btn-field-cancel.icon-close {
+  position:  relative;
+  top: 0;
+  right: 0;
+  transform:  none;
+  left: 0;
+}
+
+.btn-field-success:after,
+.btn-field-success:before  {
+  right: 0;
+  transform: translate(0%, -50%) rotate(-45deg);
+}
+
+.btn-field-success:after {
+  transform: translate(-100%, 0%) rotate(45deg);
+  right: 4px;
+  width: 5px;
+}
+
+.add-skills-field {
+  .edit-field {
+    max-width: 280px;
+  }
+}

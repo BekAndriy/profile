@@ -1,0 +1,87 @@
+@media print {
+  .App {
+    .portfolio-block {
+      max-width: 50%;
+    }
+
+    .btn-print-page {
+
+    }
+
+    .preview-info {
+      min-height: 160px;
+      width: 100%;
+      padding-left: 198px;
+    }
+
+    header.header {
+      position:  relative;
+    }
+
+    .preview-image {
+      position:  absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .add-skills-wrap {
+      display:  none;
+    }
+
+    .portfolio-block.block-empty {
+      display:  inline-block;
+    }
+
+    .preview-image img {
+      width:  160px;
+      height:  auto;
+    }
+
+    .point-item {
+      padding: 0 10px 0 5px !important;
+      /* margin: 0 5px 0 5px !important; */
+      background-color: transparent !important;
+      color: #000000 !important;
+      /* box-sizing:  content-box; */
+      /* float:  left; */
+      /* display:  inline-block; */
+    }
+
+    .point-item i {
+      display: none;
+    }
+
+    .technology-list {
+      padding-top:  10px;
+    }
+
+    .portfolio-blocks {
+      margin-top: 3px;
+    }
+
+    .portfolio-block.portfolio-code {
+      position: relative
+    }
+
+    .portfolio-block.portfolio-code code {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      left: 1px;
+      bottom: 1px;
+    }
+
+    .portfolio-block pre {
+      margin: 10px !important;
+      right: 5px !important;
+      bottom: 5px !important;
+      left: 5px !important;
+      top: 5px !important;
+      overflow: hidden;
+    }
+
+    .block-code h2 {
+      width: 99%;
+    }
+  }
+}
