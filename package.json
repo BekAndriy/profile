@@ -2,7 +2,6 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bekandriy.github.io/profile",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
@@ -55,10 +54,12 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "deploy": "react-scripts build && gh-pages -d build"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",
+    "react-scripts": "^1.1.1",
     "sass-loader": "^6.0.6"
   },
   "jest": {
